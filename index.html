@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="/assets/img/strataoacklogo1.png" type="image/png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="STRATAOACK provides exploration, mine studies, due diligence, and technical reporting for responsible mineral development."
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<title>STRATAOACK Mining Consultancy</title>
+	</head>
+	<body>
+		<form name="contact" method="POST" action="/" data-netlify="true" data-netlify-honeypot="bot_field" hidden>
+			<input type="hidden" name="form-name" value="contact" />
+			<input type="hidden" name="form" value="contact" />
+			<input name="bot_field" />
+			<input name="name" />
+			<input name="email" />
+			<input name="company" />
+			<input name="subject" />
+			<textarea name="message"></textarea>
+		</form>
+		<form name="careers" method="POST" action="/" enctype="multipart/form-data" data-netlify="true" data-netlify-honeypot="bot_field" hidden>
+			<input type="hidden" name="form-name" value="careers" />
+			<input type="hidden" name="form" value="careers" />
+			<input name="bot_field" />
+			<input name="first_name" />
+			<input name="last_name" />
+			<input name="email" />
+			<input name="subject" />
+			<textarea name="message"></textarea>
+			<input name="work_authorized" />
+			<input type="file" name="resume" />
+		</form>
+		<div id="root"></div>
+		<script type="module" src="/src/main.tsx"></script>
+	</body>
+</html>
