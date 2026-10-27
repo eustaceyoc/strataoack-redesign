@@ -1,0 +1,9 @@
+# contact.php stays reachable. Config files are included by PHP and must not be downloaded.
+<FilesMatch "^(config\.php|config\.example\.php)$">
+	<IfModule mod_authz_core.c>
+		Require all denied
+	</IfModule>
+	<IfModule !mod_authz_core.c>
+		Deny from all
+	</IfModule>
+</FilesMatch>
